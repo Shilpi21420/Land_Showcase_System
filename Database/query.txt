@@ -1,0 +1,66 @@
+--Create 'admin' table--
+
+create table admin (first varchar(100) not null,
+last varchar(100) not null,username varchar(100) not null,
+password varchar(100) not null,email varchar(100) not null,
+contact integer not null,place varchar(100) not null);
+
+-- Dumping data for table `admin`
+
+INSERT INTO `admin`(`first`, `last`, `username`, `password`, `email`, `contact`, `place`) 
+VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7])
+
+
+--
+--Create 'user' table
+--
+
+create table user (first varchar(100) not null,
+last varchar(100) not null,username varchar(100) not null,
+password varchar(100) not null,email varchar(100) not null,
+contact integer not null,place varchar(100) not null);
+
+-- Dumping data for table `user`
+
+INSERT INTO `user`(`first`, `last`, `username`, `password`, `email`, `contact`, `place`) 
+VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7])
+
+--
+--Create 'feedback' table
+--
+
+create table feedback(no integer auto_increment,
+comment varchar(100) not null);
+
+-- Dumping data for table `feedback`
+
+INSERT INTO `feedback`(`no`, `comment`) VALUES ([value-1],[value-2])
+
+--
+--Create 'land' table
+--
+
+create table land(city varchar(100) not null,
+area varchar(100) not null,acer varchar(100) not null,
+price integer not null,name varchar(100) not null,
+ownid integer not null);
+
+-- Dumping data for table `land`
+
+INSERT INTO `land`(`city`, `area`, `acre`, `price`, `name`, `ownid`)
+ VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
+
+--
+--create 'Ownerdetail' table
+--
+
+create table ownerdetail(ownid integer not null,
+name varchar(100) not null,place varchar(100) not null,
+contact integer not null,email varchar(100) not null,
+state varchar(100) not null);
+
+-- Dumping data for table `ownerdetail`
+
+INSERT INTO `ownerdetail`(`ownid`, `name`, `place`, `contact`, `email`, `state`)
+ VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
+
